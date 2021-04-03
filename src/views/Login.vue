@@ -66,22 +66,12 @@ export default {
     };
   },
   methods: {
-    submitForm(formName) {
-      this.$refs[formName].validate((valid) => {
-        if (valid) {
-          console.log(' submit!!');
-        } else {
-          console.log('error submit!!');
-          return false;
-        }
-      });
-    },
-
     //重置输入框
     resetForm(formName) {
       this.$refs[formName].resetFields();
     }
-  }
+  },
+
 
 }
 
